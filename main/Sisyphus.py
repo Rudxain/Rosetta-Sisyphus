@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 from typing import Final
 
-NAME: Final = 'Sisyphus'
+NAME: Final = "Sisyphus"
 def main():
-	chars = ''
+	chars = ""
 	# begin eternal torture
 	while True:
 		# build the string while printing it
@@ -15,5 +15,5 @@ def main():
 			print(chars)
 			chars = chars[0:-1]
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	main()
