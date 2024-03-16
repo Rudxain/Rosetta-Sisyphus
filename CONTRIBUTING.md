@@ -21,6 +21,10 @@ If your impl is cross-platform, **don't add env info**.
 - Prefer `"` for strings, as most langs use `'` for chars (I'll have to rewrite my JS and Py to comply with this rule 😭)
 - Use the most-idiomatic formatter for the lang in question. Such as: `rustfmt for Rust, `gofmt` for Go, ESLint or Prettier for JS, etc...
 
+> Why is there `.editorconfig` but not `.gitattributes`?
+
+Because I want local and remote repos to have the same `eol`
+
 ## Linting
 **NO.**
 
