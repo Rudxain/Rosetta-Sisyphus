@@ -1,5 +1,5 @@
-const NAME = 'Sisyphus'
-var chars = ''
+const NAME = "Sisyphus"
+var chars = ""
 // begin eternal torture,
 // and abuse type-coercion
 while (Infinity) {
