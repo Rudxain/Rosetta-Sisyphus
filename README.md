@@ -1,4 +1,4 @@
-# Rosetta-Sisyphus
+# /Rosetta/Sisyphus
 "Sisyphus Algorithm" implemented in multiple languages of all kinds:
 - programming
 - speaking
