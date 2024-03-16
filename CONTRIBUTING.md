@@ -19,7 +19,7 @@ Sisyphus.c.py # specific to CPython
 If your impl is cross-platform, **don't add env info**.
 
 ## Formatting
-- Prefer `"` for strings, as most langs use `'` for chars (I'll have to rewrite my JS and Py to comply with this rule 😭)
+- Prefer `"` for strings, as most langs interpret `'` in conflicting ways (in speaking/writing it's an apostrophe, in C and Rust it's a `char`).
 - Use the most-idiomatic formatter for the lang in question. Such as: `rustfmt` for Rust, ESLint or Prettier for JS, `gofmt` for Go, etc...
 
 > Why is there `.editorconfig` but not `.gitattributes`?
