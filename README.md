@@ -1,4 +1,8 @@
 # /Rosetta/Sisyphus
+<div align=center>
+<img alt='Contributors portrayed as Sisyphus, pushing a "Rosetta" boulder' src=res/icon.jpg>
+</div>
+
 "Sisyphus Algorithms" implemented in multiple languages of all kinds:
 - programming
 - speaking
