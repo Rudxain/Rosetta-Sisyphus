@@ -1,0 +1,21 @@
+root = true
+
+[*]
+charset = UTF-8
+end_of_line = lf
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{,ba,b,c,da,k,mk,fi,z}sh]
+end_of_line = lf
+# POSIX compliance
+insert_final_newline = true
+
+[*.{bat,cmd,ps1,vbs}]
+end_of_line = crlf
+insert_final_newline = false
+
+[*.y{,a}ml]
+indent_style = space
+indent_size = 2
