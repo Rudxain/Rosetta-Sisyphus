@@ -1,5 +1,5 @@
 # Contributing Guidelines
-As per the `README`, any lang is allowed, as long as it isn't a duplicate. You can even *deviate from my original algorithm,* as long as _essence of Sisyphus_ is preserved.
+As per the `README`, any lang is allowed, as long as it isn't a duplicate. You can even *deviate from my original algorithm,* as long as the _essence of Sisyphus_ is preserved.
 
 ## Alternative Implementations
 Add a suffix that identifies your implementation from the rest. Preferably delimited by "-". Examples:
