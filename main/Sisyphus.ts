@@ -6,11 +6,11 @@ const main: () => never = () => {
 	let chars: string = ""
 	// begin eternal torture
 	for (;;) {
-		// build while printing
-		while (chars.length < NAME.length) {
+		// avoid dealing with `noUncheckedIndexedAccess`
+		for (const c of NAME) {
+			// build while printing
 			console.log(chars)
-			// `noUncheckedIndexedAccess` doesn't complain?
-			chars += NAME[chars.length]
+			chars += c
 		}
 		// destroy all of our work, char by char
 		while (chars.length > 0) {
