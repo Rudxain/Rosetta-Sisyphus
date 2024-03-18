@@ -1,16 +1,16 @@
 const NAME = "Sisyphus"
+// SQL?
 var chars = ""
 // begin eternal torture,
 // and abuse type-coercion
 while (Infinity) {
-	// build the string while printing it
-	while (chars.length < NAME.length) {
-		console.log(chars)
-		chars += NAME[chars.length]
-	}
+	while (chars.length < NAME.length)
+		// build the string while printing it
+		console.log(chars),
+		chars += NAME[chars.length] // "unsafe" indexing
 	// destroy all of our work, char by char
-	while (chars.length > 0) {
-		console.log(chars)
+	while (chars.length)
+		console.log(chars),
 		/*
 		`substr` is deprecated.
 		`substring` is specific to strings.
@@ -20,5 +20,4 @@ while (Infinity) {
 		which is desirable for minification.
 		*/
 		chars = chars.slice(0, -1)
-	}
 }
