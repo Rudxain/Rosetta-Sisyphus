@@ -4,7 +4,7 @@ const NAME: [u8; 8] = *b"Sisyphus";
 
 fn main() {
 	// begin eternal torture
-	for _ in 0..2 {
+	loop {
 		// give the illusion of building the string
 		for i in 0..=NAME.len() {
 			// I wish there was a compile-time UTF8-validated
