@@ -8,10 +8,13 @@ indent_size = 4
 trim_trailing_whitespace = true
 
 [*.{,ba,b,c,da,k,mk,fi,z}sh]
+# UNIX compliance
 end_of_line = lf
-# POSIX compliance
+# according to POSIX,
+# `lf` is terminator not delimiter.
 insert_final_newline = true
 
+# MS-DOS/Windows
 [*.{bat,cmd,ps1,vbs}]
 end_of_line = crlf
 insert_final_newline = false
