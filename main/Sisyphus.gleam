@@ -9,6 +9,11 @@ fn range(n: Int) {
   }
 }
 
+fn for_each(n, cb) -> Nil {
+  map(range(n), cb)
+  Nil
+}
+
 /// ♾️
 fn loop(cb) {
   cb()
@@ -22,12 +27,11 @@ fn do(l) {
   string.slice(name, 0, l)
   |>
   io.println()
-  l
 }
 
 pub fn main() {
   loop(fn() {
-    map(range(len), do)
-    map(range(-len), do)
+    for_each(len, do)
+    for_each(-len, do)
   })
 }
