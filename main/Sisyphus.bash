@@ -3,6 +3,7 @@ set -euf
 
 readonly NAME='Sisyphus'
 
+# should we use a different syntax?
 main() {
 	local l=0
 	while true
