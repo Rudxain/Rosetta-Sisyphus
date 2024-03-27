@@ -28,6 +28,6 @@ If your impl is cross-platform, **don't add env info**.
 Because I want local and remote repos to have the same `eol`
 
 ## Linting
-**NO.**
+**NO.** I want each lang to show its quirks, for the sake of diversity!
 
-I want each lang to show its quirks, for the sake of diversity!
+However, I recommend using [SC](https://github.com/koalaman/shellcheck) to verify POSIX-compliance of `sh` scripts. If there's a better way to statically-check POSIX scripts, please let me know
