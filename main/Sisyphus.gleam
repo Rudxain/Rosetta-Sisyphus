@@ -1,22 +1,22 @@
-import gleam/io
+import gleam/list.{map}
 import gleam/string
-import gleam/list.{range, map}
-import gleam/option.{type Option, None, Some}
+import gleam/io
+
+fn range(n: Int) {
+  case n {
+    _ if n < 0 -> list.range(-n, 0)
+    _ -> list.range(0, n - 1)
+  }
+}
+
+/// ♾️
+fn loop(cb) {
+  cb()
+  loop(cb)
+}
 
 const name: String = "Sisyphus"
 const len: Int = 8
-
-/// Infallibly loop `n` times.
-/// if `None`, then ♾️.
-fn loop(cb: fn(Int) -> Int, n: Option(Int)) -> Int {
-  case n {
-    _ if n <= 0 -> n
-    _ -> {
-      cb(n)
-      loop(cb, n - 1)
-    }
-  }
-}
 
 fn do(l) {
   string.slice(name, 0, l)
@@ -26,9 +26,8 @@ fn do(l) {
 }
 
 pub fn main() {
-  loop(fn(_) {
-    map(range(0, len), do)
-    loop(do, len - 1)
-    0
-  }, 0x1000000000000000000000)
+  loop(fn() {
+    map(range(len), do)
+    map(range(-len), do)
+  })
 }
