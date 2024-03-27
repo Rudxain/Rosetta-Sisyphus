@@ -1,6 +1,6 @@
 import gleam/io
 import gleam/string
-import gleam/list.{range,map}
+import gleam/list.{range, map}
 import gleam/option.{type Option, None, Some}
 
 const name: String = "Sisyphus"
@@ -8,7 +8,7 @@ const len: Int = 8
 
 /// Infallibly loop `n` times.
 /// if `None`, then ♾️.
-fn loop(cb: fn(Int) -> Int, n: Int) -> Int {
+fn loop(cb: fn(Int) -> Int, n: Option(Int)) -> Int {
   case n {
     _ if n <= 0 -> n
     _ -> {
