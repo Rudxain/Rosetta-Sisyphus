@@ -20,4 +20,5 @@ main() {
 		done
 	done
 }
-main
+# https://stackoverflow.com/a/28776166
+(return 0 2>/dev/null) || main
